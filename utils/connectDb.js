@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require("mongoose");
 
 const connection =  {}
 
@@ -13,7 +13,9 @@ async function connectDb() {
         useCreateIndex: true,
         useFindAndModify: false,
         useNewUrlParser: true,
-        useUnifiedTopology: true
+        autoReconnect: true,
+        poolSize: 10,
+        //useUnifiedTopology: true
     });
 
     console.log("DB connected", db.connection._readyState);

@@ -1,4 +1,5 @@
-import mongoose from 'mongoose'
+const mongoose = require("mongoose");
+
 import Product from './Product';
 
 const { ObjectId, Number, String}  = mongoose.Schema.Types;

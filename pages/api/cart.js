@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken'
 import Cart from '../../models/Cart'
+const mongoose = require("mongoose");
 import connectDb from '../../utils/connectDb'
-import mongoose from 'mongoose'
 import Product from '../../models/Product'
 
 connectDb()
